@@ -10,7 +10,6 @@
           <div>
           <button class="edit-btn" @click="openModal(item)">Edit</button>
           <button class="edit-btn" @click="deleteItem(item.id)">Delete</button>
-
           </div>
         </div>
       </div>
@@ -27,8 +26,6 @@ export default {
     ...mapState({
       userList: state => state.app.userList
     }),
-  },
-  mounted(){
   },
   methods: {
     ...mapActions(["app/setUserList","app/toggleEditModal"]),
